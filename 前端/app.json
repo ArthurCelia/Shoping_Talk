@@ -1,0 +1,43 @@
+{
+  "pages":[   
+    "pages/demo03/demo03",
+    "pages/index/index",
+    "pages/img/img",
+    "pages/mine/mine",
+    "pages/search/search",
+    "pages/demo1/demo1",     
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "jump",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true,
+    "backgroundColor":"#0094ff"
+  },
+  "tabBar": {
+    "list": [
+    {
+      "pagePath": "pages/index/index",
+      "text": "商城",
+      "iconPath": "pages/icon/_shop.png",
+      "selectedIconPath": "pages/icon/shop.png"
+    },
+    {
+      "pagePath": "pages/img/img",
+      "text": "上传",
+      "iconPath": "pages/icon/_upload.png",
+      "selectedIconPath": "pages/icon/upload.png"
+    },
+    {
+      "pagePath": "pages/mine/mine",
+      "text": "我的",
+      "iconPath": "pages/icon/_my.png",
+      "selectedIconPath": "pages/icon/my.png"
+    }
+  ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
