@@ -1,13 +1,20 @@
-<!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="ustc_index">
+  <SearchInput></SearchInput>
+  <view class="index_swiper">
+    <swiper autoplay interval="3000" circular indicator-dots indicator-color="#ffffff" indicator-active-color="#1296db">
+      <swiper-item>
+          <image mode="widthFix" src="https://img20.360buyimg.com/babel/s1580x740_jfs/t1/147353/28/16232/267732/5fc48c0eEaabb58ae/20b6ee1688e2ef7f.jpg!cc_1580x740.webp"></image>  
+      </swiper-item>
+      <swiper-item>
+          <image mode="widthFix" src="https://img10.360buyimg.com/babel/s1580x740_jfs/t1/139718/16/16147/263538/5fc0ccf6Ee38e19f3/b10333c2e5e699d2.jpg!cc_1580x740.webp"></image> 
+      </swiper-item>
+      <swiper-item>
+          <image mode="widthFix" src="https://img10.360buyimg.com/babel/s1580x740_jfs/t1/139707/10/16627/200022/5fc88415E248fd60e/4e9205a514eadbd9.jpg!cc_1580x740.webp"></image> 
+      </swiper-item>
+    </swiper>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
-</view>
+  <view bindtap="skip1">专用书籍</view> 
+  <view bindtap="skip2">数码产品</view>
+  <view bindtap="skip3">日用百货</view>
+  <view bindtap="skip4">其他分类</view>
+</view> 

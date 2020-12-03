@@ -1,43 +1,62 @@
 {
   "pages":[   
-    "pages/demo03/demo03",
     "pages/index/index",
-    "pages/img/img",
-    "pages/mine/mine",
+    "pages/discovery/discovery",
+    "pages/add/add",
+    "pages/message/message",
+    "pages/my/my",
     "pages/search/search",
-    "pages/demo1/demo1",     
-    "pages/logs/logs"
+    "pages/index_1/index_1",
+    "pages/index_2/index_2",
+    "pages/index_3/index_3",
+    "pages/index_4/index_4"
   ],
   "window":{
-    "backgroundTextStyle":"dark",
-    "navigationBarBackgroundColor": "#0094ff",
-    "navigationBarTitleText": "jump",
-    "navigationBarTextStyle":"black",
-    "enablePullDownRefresh": true,
-    "backgroundColor":"#0094ff"
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "USTC",
+    "navigationBarTextStyle":"white"
   },
   "tabBar": {
+    "color": "",
+    "selectedColor": "#1296db",
+    "backgroundColor": "",
+    "position": "bottom",
+    "borderStyle": "black",
     "list": [
-    {
-      "pagePath": "pages/index/index",
-      "text": "商城",
-      "iconPath": "pages/icon/_shop.png",
-      "selectedIconPath": "pages/icon/shop.png"
-    },
-    {
-      "pagePath": "pages/img/img",
-      "text": "上传",
-      "iconPath": "pages/icon/_upload.png",
-      "selectedIconPath": "pages/icon/upload.png"
-    },
-    {
-      "pagePath": "pages/mine/mine",
-      "text": "我的",
-      "iconPath": "pages/icon/_my.png",
-      "selectedIconPath": "pages/icon/my.png"
-    }
-  ]
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icons/index.png",
+        "selectedIconPath": "icons/index_o.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "发现",
+        "iconPath": "icons/discovery.png",
+        "selectedIconPath": "icons/discovery_o.png"
+      },
+      {
+        "pagePath": "pages/add/add",
+        "text": "",
+        "iconPath": "icons/add.png",
+        "selectedIconPath": "icons/add.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "iconPath": "icons/message.png",
+        "selectedIconPath": "icons/message_o.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "icons/my.png",
+        "selectedIconPath": "icons/my_o.png"
+      }
+      
+    ]
   },
-  "style": "v2",
+  
   "sitemapLocation": "sitemap.json"
 }
