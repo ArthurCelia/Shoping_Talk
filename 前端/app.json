@@ -1,7 +1,7 @@
 {
   "pages":[   
     "pages/index/index",
-    "pages/discovery/discovery",
+    "pages/discovery/index",
     "pages/add/add",
     "pages/message/message",
     "pages/my/my",
@@ -31,7 +31,7 @@
         "selectedIconPath": "icons/index_o.png"
       },
       {
-        "pagePath": "pages/discovery/discovery",
+        "pagePath": "pages/discovery/index",
         "text": "发现",
         "iconPath": "icons/discovery.png",
         "selectedIconPath": "icons/discovery_o.png"

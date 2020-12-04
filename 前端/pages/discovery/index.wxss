@@ -1,0 +1,32 @@
+.first_tab .tiezi_item {
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.first_tab .tiezi_item .tiezi_img_wrap {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first_tab .tiezi_item .tiezi_img_wrap image {
+  height: 70%;
+  width: 70%;
+}
+.first_tab .tiezi_item .tiezi_info_wrap {
+  flex: 3;
+}
+.first_tab .tiezi_item .tiezi_info_wrap .tiezi_name {
+  font-size: 32rpx;
+}
+.first_tab .tiezi_item .tiezi_info_wrap .tiezi_text {
+  color: #BBBBBB;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}

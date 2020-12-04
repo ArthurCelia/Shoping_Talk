@@ -1,0 +1,44 @@
+<view class="luntan_index">
+    <SearchInput></SearchInput>
+    <Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange"></Tabs>
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="first_tab">
+            <navigator class="tiezi_item">
+                <view class="tiezi_img_wrap">
+                    <image mode="widthFix" src="https://i.loli.net/2020/12/03/qrKWg4fsDXcGlF5.jpg"></image>
+                </view>
+                <view class="tiezi_info_wrap">
+                    <view class="tiezi_name">阿尔托莉雅真好看啊xdm</view>
+                    <view class="tiezi_text">阿尔托莉雅·潘德拉贡（日文：アルトリア・ペンドラゴン；日文：Altria Pendragon）是日本文字冒险游戏《Fate/stay night》及其衍生作品中的主要角色，身份为古不列颠传说中的亚瑟王。性格忠诚正直，谦逊有礼，个性认真。因有圣剑Excalibur的传承，在第四、五次圣杯战争中一直以“Saber”职阶被召唤到现世。
+                        与爱尔奎特·布伦史塔德、苍崎青子、两仪式一起并称型月四姬，象征“英灵”。</view>
+                </view>
+            </navigator>
+
+            <navigator class="tiezi_item">
+                <view class="tiezi_img_wrap">
+                    <image mode="widthFix" src="https://i.loli.net/2020/12/03/rdRHJmTaiXuF9p3.jpg"></image>
+                </view>
+                <view class="tiezi_info_wrap">
+                    <view class="tiezi_name">阿尔托莉雅真好看啊xdm</view>
+                    <view class="tiezi_text">阿尔托莉雅·潘德拉贡（日文：アルトリア・ペンドラゴン；日文：Altria Pendragon）是日本文字冒险游戏《Fate/stay night》及其衍生作品中的主要角色，身份为古不列颠传说中的亚瑟王。性格忠诚正直，谦逊有礼，个性认真。因有圣剑Excalibur的传承，在第四、五次圣杯战争中一直以“Saber”职阶被召唤到现世。
+                        与爱尔奎特·布伦史塔德、苍崎青子、两仪式一起并称型月四姬，象征“英灵”。</view>
+                </view>
+            </navigator>
+
+            <navigator class="tiezi_item">
+                <view class="tiezi_img_wrap">
+                    <image mode="widthFix" src="https://i.loli.net/2020/12/03/ZOxenDHXWw5ujUY.png"></image>
+                </view>
+                <view class="tiezi_info_wrap">
+                    <view class="tiezi_name">阿尔托莉雅真好看啊xdm</view>
+                    <view class="tiezi_text">阿尔托莉雅·潘德拉贡（日文：アルトリア・ペンドラゴン；日文：Altria Pendragon）是日本文字冒险游戏《Fate/stay night》及其衍生作品中的主要角色，身份为古不列颠传说中的亚瑟王。性格忠诚正直，谦逊有礼，个性认真。因有圣剑Excalibur的传承，在第四、五次圣杯战争中一直以“Saber”职阶被召唤到现世。
+                        与爱尔奎特·布伦史塔德、苍崎青子、两仪式一起并称型月四姬，象征“英灵”。</view>
+                </view>
+            </navigator>
+
+        </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">1</block>
+    <block wx:elif="{{tabs[2].isActive}}">2</block>
+</view>
+

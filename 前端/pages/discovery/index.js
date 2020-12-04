@@ -1,10 +1,27 @@
-// pages/discovery/discovery.js
+// pages/luntan/index.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
+    tabs:[
+      {
+        id:0,
+        value:"推荐",
+        isActive:true
+      },
+      {
+        id:1,
+        value:"最热",
+        isActive:false
+      },
+      {
+        id:0,
+        value:"最新",
+        isActive:false
+      },
+    ]
 
   },
 
@@ -62,5 +79,13 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  handletabsItemChange(e){
+    const {index}=e.detail;
+    let {tabs}=this.data;
+    tabs.forEach((v,i)=>i===index?v.isActive=true:v.isActive=false);
+    this.setData({
+      tabs
+    })
   }
 })
