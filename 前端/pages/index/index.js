@@ -7,6 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    swiperList:[],
     leftMenuList:[],
     rightContent:[],
     currentIndex:0,
@@ -47,7 +48,17 @@ Page({
     //     })
     //   }
     // }
+    this.getSwiperList(),
     this.getCates();
+  },
+
+  getSwiperList(){
+    request({url:"https://www.fastmock.site/mock/3caf8f9ab79a647b69ae91f1d72141ef/_shop_01/api/lunbotu"})
+    .then(result=>{
+              this.setData({
+          swiperList:result.data.message
+        })
+    })
   },
 
  async getCates(){

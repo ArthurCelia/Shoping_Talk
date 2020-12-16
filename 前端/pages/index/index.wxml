@@ -1,7 +1,7 @@
 <view class="ustc_index">
   <SearchInput></SearchInput>
   <!--轮播图开始-->
-  <view class="index_swiper">
+  <!-- <view class="index_swiper">
     <swiper autoplay interval="3000" circular indicator-dots indicator-color="#ffffff" indicator-active-color="#1296db">
       <swiper-item>
           <image mode="widthFix" src="https://img20.360buyimg.com/babel/s1580x740_jfs/t1/147353/28/16232/267732/5fc48c0eEaabb58ae/20b6ee1688e2ef7f.jpg!cc_1580x740.webp"></image>  
@@ -13,8 +13,23 @@
           <image mode="widthFix" src="https://img10.360buyimg.com/babel/s1580x740_jfs/t1/139707/10/16627/200022/5fc88415E248fd60e/4e9205a514eadbd9.jpg!cc_1580x740.webp"></image> 
       </swiper-item>
     </swiper>
-  </view>
+  </view> -->
   <!--轮播图结束-->
+
+      <!--轮播图开始-->
+      <view class="index_swiper">
+        
+        <swiper autoplay indicator-dots circular>
+            <swiper-item
+            wx:for="{{swiperList}}"
+            wx:key="goods_id">
+                <navigator url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+                    <image mode="widthFix" src="{{item.image_src}}"></image>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+    <!--轮播图结束-->
 
   <!-- <view bindtap="skip1">专用书籍</view> 
   <view bindtap="skip2">数码产品</view>
