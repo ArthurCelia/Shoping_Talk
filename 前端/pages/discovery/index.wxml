@@ -3,7 +3,7 @@
     <Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange"></Tabs>
     <block wx:if="{{tabs[0].isActive}}">
         <view class="first_tab">
-            <navigator class="tiezi_item">
+            <navigator class="tiezi_item" url="/pages/post_detail/index">
                 <view class="tiezi_img_wrap">
                     <image mode="widthFix" src="https://i.loli.net/2020/12/03/qrKWg4fsDXcGlF5.jpg"></image>
                 </view>
@@ -14,7 +14,7 @@
                 </view>
             </navigator>
 
-            <navigator class="tiezi_item">
+            <navigator class="tiezi_item" url="/pages/post_detail/index">
                 <view class="tiezi_img_wrap">
                     <image mode="widthFix" src="https://i.loli.net/2020/12/03/rdRHJmTaiXuF9p3.jpg"></image>
                 </view>
@@ -25,7 +25,7 @@
                 </view>
             </navigator>
 
-            <navigator class="tiezi_item">
+            <navigator class="tiezi_item" url="/pages/post_detail/index">
                 <view class="tiezi_img_wrap">
                     <image mode="widthFix" src="https://i.loli.net/2020/12/03/ZOxenDHXWw5ujUY.png"></image>
                 </view>

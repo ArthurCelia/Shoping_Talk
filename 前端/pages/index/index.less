@@ -16,6 +16,7 @@ page{
               padding-left: 40rpx;
               padding-right: 40rpx;
               padding-top: 10rpx;
+              padding-bottom: 10rpx;
               display: flex;
               flex: 1;
               justify-content: center;
@@ -32,29 +33,58 @@ page{
           
           .goods_group{
               .goods_title{
-                      height: 80rpx;
+                      // height: 0rpx;
+                      // display: flex;
+                      // justify-content: center;
+                      // align-items: center;
+                      // .delimiter{
+                      //     color:#ccc;
+                      //     padding: 0 10rpx;
+                      // }
+                      .title{}
+                  }
+                .goods_list{
+                  .goods_item{
+                    padding-bottom: 15rpx;
+                    padding-top: 15rpx;
+                    padding-left: 15rpx;
+                    padding-right: 15rpx;
+                    display:flex;
+                    border-bottom:1rpx solid #ccc;
+                    border-top:1rpx solid #ccc;
+                    .goods_image{
+                      flex: 2;
                       display: flex;
                       justify-content: center;
                       align-items: center;
-                      .delimiter{
-                          color:#ccc;
-                          padding: 0 10rpx;
-                      }
-                      .title{}
-                  }
-              }
-              .goods_list{
-                  display: flex;
-                  flex-wrap: wrap;
-                  navigator{
-                      width:33.33%;
-                      text-align:center;
                       image{
-                          width: 50%;
+                        width: 85%;
+                        height: 85%;
                       }
-                      .goods_name{}
+                    }
+                    .goods_info{
+                      padding-top: 35rpx;
+                      padding-left: 20rpx;
+                      flex: 3;
+                      .goods_name{
+                        font-size:32rpx;
+                      }
+                      .goods_price{
+                        color:#fa0606
+                      }
+                      .goods_text{
+                        color:#BBBBBB;
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 2;
+                      }
+                    }
                   }
+
+                }
               }
+
           }
       }
   }

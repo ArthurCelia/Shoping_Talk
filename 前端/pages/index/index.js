@@ -29,24 +29,25 @@ Page({
     2.没有旧数据 直接发送新请求
     3.有旧数据 同时 旧的数据也没有过期，就使用本地存储中的旧数据
     */
-    const Cates=wx.getStorageSync("cates");
-    if(!Cates){
-      this.getCates();
-    }else{
-      if(Date.now()-Cates.time>1000*10){
-        this.getCates();
-      }else{
-        this.Cates=Cates.data;
-        let leftMenuList=this.Cates.map(v=>v.cat_name);
+    // const Cates=wx.getStorageSync("cates");
+    // if(!Cates){
+    //   this.getCates();
+    // }else{
+    //   if(Date.now()-Cates.time>1000*10){
+    //     this.getCates();
+    //   }else{
+    //     this.Cates=Cates.data;
+    //     let leftMenuList=this.Cates.map(v=>v.cat_name);
 
-        let rightContent=this.Cates[0].children;
+    //     let rightContent=this.Cates[0].children;
   
-        this.setData({
-          leftMenuList,
-          rightContent
-        })
-      }
-    }
+    //     this.setData({
+    //       leftMenuList,
+    //       rightContent
+    //     })
+    //   }
+    // }
+    this.getCates();
   },
 
  async getCates(){
@@ -72,7 +73,7 @@ Page({
       this.Cates=res.data.message;
       wx.setStorageSync("cates", {time:Date.now(),data:this.Cates});
 
-      let leftMenuList=this.Cates.map(v=>v.cat_name);
+      let leftMenuList=this.Cates.map(v=>v.goods_name);
 
       let rightContent=this.Cates[0].children;
 
