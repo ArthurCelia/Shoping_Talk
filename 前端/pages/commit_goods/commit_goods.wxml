@@ -1,0 +1,13 @@
+<!--pages/commit_goods/commit_goods.wxml-->
+<view>
+  <view>
+    <textarea  placeholder="商品名称~" placeholder-style="color:#888888;font-size:38rpx" class="goods_name" maxlength="-1" ></textarea>
+  </view>
+  
+  <textarea  placeholder="价格~" placeholder-style="color:#888888;font-size:38rpx" class="goods_price" maxlength="-1" ></textarea>
+  <view class="textarea">
+  <textarea bindinput="bindTextAreaBlur" placeholder="商品详细描述~" placeholder-style="color:#888888;font-size:38rpx" class="textinput" maxlength="-1" ></textarea>
+  </view>
+</view>
+
+<view id="btn" class="click" bindtap="send">发布</view>

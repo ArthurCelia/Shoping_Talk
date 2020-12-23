@@ -1,0 +1,36 @@
+<view class="luntan_index">
+    <SearchInput></SearchInput>
+    <Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange"></Tabs>
+    <block wx:if="{{tabs[0].isActive}}">
+        <scroll-view class="scbg" scroll-y="true">
+            <block wx:for="{{list}}" wx:for-index="id" wx:for-item="itemName">
+                <view class="box">
+                    <view class="firstblock">
+                        <image class="touxiang" src="{{itemName.face_url}}"></image>
+                        <view class="person">
+                            <view class="name">
+                                <text class="showname">{{itemName.username}}</text>
+                            </view>
+                            <view class="tel">
+                                <text class="showtime">{{itemName.send_timestamp}}</text>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="secondblock">
+                        <text class="content">{{itemName.content}} </text>
+                    </view>
+                    <view class="thirdblock">
+                        <image class="like" src="/icons/like.png"></image>
+                        <text class="number">{{itemName.total_likes}}</text>
+
+                        <image class="review" src="/icons/review.png"></image>
+                        <text class="number2">{{itemName.total_reciew}}</text>
+                    </view>
+                </view>
+            </block>
+        </scroll-view>
+    </block>
+
+    <block wx:elif="{{tabs[1].isActive}}">1</block>
+    <block wx:elif="{{tabs[2].isActive}}">2</block>
+</view>

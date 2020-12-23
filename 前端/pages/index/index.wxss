@@ -1,13 +1,74 @@
-view{
-  /*color:var(--themeColor)
-  */
-  
+page {
+  height: 100%;
 }
-swiper{
+.cates {
+  height: 100%;
+}
+.cates .cates_container {
+  height: calc( 100vh - 90rpx );
+  display: flex;
+  flex-direction: column;
+}
+.cates .cates_container .top_menu {
+  white-space: nowrap;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+.cates .cates_container .top_menu .menu_item {
+  height: 60rpx;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  display: inline-block;
+}
+.cates .cates_container .top_menu .active {
+  color: var(--themeColor);
+  border-bottom: 5rpx solid currentColor;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item {
+  padding-bottom: 15rpx;
+  padding-top: 15rpx;
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  border-top: 1rpx solid #ccc;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_image {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_image image {
+  width: 85%;
+  height: 85%;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_info {
+  padding-top: 35rpx;
+  padding-left: 20rpx;
+  flex: 3;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_info .goods_name {
+  font-size: 32rpx;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_info .goods_price {
+  color: #fa0606;
+}
+.cates .cates_container .bottom_content .goods_group .goods_list .goods_item .goods_info .goods_text {
+  color: #BBBBBB;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.picture{
   width: 100%;
-  height: calc(100vw * 740 / 1580);
-}
-image{
-  width:100%;
-
+  height: 300rpx;
 }

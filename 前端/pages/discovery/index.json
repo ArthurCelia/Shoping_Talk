@@ -2,6 +2,5 @@
   "usingComponents": {
     "SearchInput": "../../components/SearchInput/SearchInput",
     "Tabs": "../../components/Tabs/Tabs"
-  },
-  "navigationBarTitleText": "USTC首页"
+  }
 }

@@ -7,7 +7,11 @@ Page({
   data: {
 
   },
-
+  commit_tree:function(e){
+    wx.navigateTo({
+      url: '../commit_tree/commit_tree'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
