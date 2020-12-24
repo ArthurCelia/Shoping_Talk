@@ -2,6 +2,7 @@
     <SearchInput></SearchInput>
     <Tabs tabs="{{tabs}}" bindtabsItemChange="handletabsItemChange"></Tabs>
     <block wx:if="{{tabs[0].isActive}}">
+
         <scroll-view class="scbg" scroll-y="true">
             <block wx:for="{{list}}" wx:for-index="id" wx:for-item="itemName">
                 <view class="box">
@@ -34,3 +35,4 @@
     <block wx:elif="{{tabs[1].isActive}}">1</block>
     <block wx:elif="{{tabs[2].isActive}}">2</block>
 </view>
+

@@ -35,7 +35,9 @@ Page({
   async getGoodsDetail(goods_id){
     const goodsObj=await request({url:"https://api-hmugo-web.itheima.net/api/public/v1/goods/detail",data:{goods_id}});
     this.GoodsInfo=goodsObj.data.message;
+
     console.log(this.GoodsInfo);
+
     this.setData({
       goodsObj:{
         goods_name:goodsObj.data.message.goods_name,

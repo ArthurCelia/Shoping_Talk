@@ -13,7 +13,6 @@
     "pages/search/search",
     "pages/post_detail/index",
     "pages/enroll/enroll"
-    
   ],
   "window":{
     "backgroundTextStyle":"light",

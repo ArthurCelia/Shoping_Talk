@@ -68,7 +68,9 @@ page {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
+
 .picture{
   width: 100%;
   height: 300rpx;
 }
+

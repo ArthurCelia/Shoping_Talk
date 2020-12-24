@@ -21,6 +21,7 @@ Page({
         value:"最新",
         isActive:false
       },
+
     ],
     list:[
       {
@@ -55,6 +56,7 @@ Page({
         total_likes:22,
         total_reciew:10,
       }
+
     ]
 
   },
