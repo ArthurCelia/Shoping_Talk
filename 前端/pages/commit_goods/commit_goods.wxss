@@ -1,0 +1,40 @@
+/* pages/commit_goods/commit_goods.wxss */
+page{
+  background-color: #EFEFEF;
+}
+.goods_name{
+  width: 110%;
+  background-color: white;
+  height: 40rpx;
+  line-height: rpx;
+  font-size:
+}
+
+.textarea{
+  width: 100%;
+  background-color: white;
+}
+.textinput{
+  width: 90%;
+  height: 500rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  font-size: 38rpx;
+}
+.click{
+  width: 84%;
+  height: 100rpx;
+  line-height: 100rpx;
+  border-radius: 10rpx;
+  margin: auto;
+  margin-top: 70rpx;
+  margin-left: 8%;
+  margin-right: 8%;
+  background-color: #F76968;
+  text-align: center;
+  color: white;
+  font-size: 38rpx;
+
+}

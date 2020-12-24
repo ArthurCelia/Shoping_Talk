@@ -17,5 +17,9 @@ App({
     onPageNotFound: function(options){
 
     },
+    globalData: {
+        userInfo:{},//微信获取用户信息
+        user:{},//后台返回用户信息
+      }
     
 });

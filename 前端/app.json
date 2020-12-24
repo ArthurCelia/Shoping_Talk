@@ -1,23 +1,24 @@
 {
   "pages":[   
     "pages/index/index",
-    "pages/discovery/index",
-    "pages/add/add",
-    "pages/message/message",
-    "pages/my/my",
-    "pages/search/search",
     "pages/goods_detail/index",
+    "pages/login/login",
+    "pages/discovery/index",
+    "pages/load/load",
+    "pages/add/add",
+    "pages/my/my",
+    "pages/commit_goods/commit_goods",
+    "pages/commit_tree/commit_tree",
+    "pages/message/message",
+    "pages/search/search",
     "pages/post_detail/index",
-    "pages/index_1/index_1",
-    "pages/index_2/index_2",
-    "pages/index_3/index_3",
-    "pages/index_4/index_4"
+    "pages/enroll/enroll"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#1296db",
     "navigationBarTitleText": "USTC",
-    "navigationBarTextStyle":"white"
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "color": "",

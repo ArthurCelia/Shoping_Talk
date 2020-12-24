@@ -1,2 +1,7 @@
 <!--pages/add/add.wxml-->
-<text>pages/add/add.wxml</text>
+<view>
+  <button  class="commit" bindtap="" >发布闲置</button>
+  <button  class="commit" bindtap="commit_tree" >发布树洞</button>
+</view>
+
+

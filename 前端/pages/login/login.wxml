@@ -1,0 +1,16 @@
+<!--pages/login/login.wxml-->
+<view class="background">
+ <view class="first">
+  <input placeholder="用户名" type="text" placeholder-class="plas" class="inputs" bindinput="usernameInput"></input>
+ </view>
+ <view class="second">
+  <input placeholder="登录密码" type="password"  placeholder-class="plas" class="inputs" bindinput="passwordInput"></input>
+ </view>
+ <button class="click" bindtap="regist">登录</button>
+ <view class="cha" bindtap="signin">
+     <text class="no">没有账号？点我注册 </text>
+ </view>
+ <button type="primary" bindtap="wx_load">微信一键登录</button>
+
+
+</view>

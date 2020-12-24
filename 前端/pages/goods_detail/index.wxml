@@ -15,7 +15,11 @@
     </swiper>
 </view>
 
+  
 <view class="goods_price">￥{{goodsObj.goods_price}}</view>
+<view class="goods_time">发布时间：2020-12-12 12:41:12</view>
+
+
 <view class="goods_name_row">
     <view class="goods_name">{{goodsObj.goods_name}}</view>
     <view class="goods_collect">
@@ -25,13 +29,18 @@
 </view>
 
 <view class="goods_info">
-    <view class="goods_info_title">图文详情</view>
+
+    <view class="goods_info_title">详情描述</view>
     <view class="goods_info_content">
-        <!--富文本-->
-        <rich-text  nodes="{{goodsObj.goods_introduce}}">    
-        </rich-text>
+
     </view>
 </view>
+
+<view class="goods_comment">
+
+</view>
+
+
 
 <!--底部工具栏-->
 <view class="btm_tool">

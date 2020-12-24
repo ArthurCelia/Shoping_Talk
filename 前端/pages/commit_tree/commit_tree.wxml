@@ -1,0 +1,5 @@
+<!--pages/commit/commit.wxml-->
+<view class="textarea">
+  <textarea bindinput="bindTextAreaBlur" placeholder="发条树洞吧~" placeholder-style="color:#888888;font-size:38rpx" class="textinput" maxlength="-1" ></textarea>
+</view>
+<view id="btn" class="click" bindtap="send">发布</view>

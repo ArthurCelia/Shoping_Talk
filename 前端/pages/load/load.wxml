@@ -1,0 +1,8 @@
+<!--pages/load/load.wxml-->
+<!-- 需要使用 button 来授权登录 -->
+<view wx:if="{{canIUse}}" class="mai">
+  <button class="but" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button>
+  <view class="med">————————————</view>
+  <view class="txt"> 欢迎使用小程序，我们需要一些你的授权</view>
+</view>
+<view wx:else>请升级微信版本</view>
