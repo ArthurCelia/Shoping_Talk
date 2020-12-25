@@ -27,6 +27,7 @@ Page({
       {
         face_url:"/icons/add.png",
         username:"多啦B梦",
+        post_id:1,
         send_timestamp:"2019-03-19 12:41:12",
         content:"正式版，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。",
         total_likes:99,
@@ -35,6 +36,7 @@ Page({
       {
         face_url:"/icons/add.png",
         username:"多啦C梦",
+        post_id:2,
         send_timestamp:"2019-03-19 12:41:12",
         content:"正式版，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。",
         total_likes:23,
@@ -43,6 +45,7 @@ Page({
       {
         face_url:"/icons/add.png",
         username:"多啦D梦",
+        post_id:3,
         send_timestamp:"2019-03-20 12:41:12",
         content:"正式版，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。",
         total_likes:22,
@@ -51,6 +54,7 @@ Page({
       {
         face_url:"/icons/add.png",
         username:"多啦D梦",
+        post_id:4,
         send_timestamp:"2019-03-20 12:41:12",
         content:"正式版，仅在当前小程序为开发版或体验版时此参数有效；如果当前小程序是正式版，则打开的小程序必定是正式版。",
         total_likes:22,

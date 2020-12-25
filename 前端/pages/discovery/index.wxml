@@ -5,6 +5,7 @@
 
         <scroll-view class="scbg" scroll-y="true">
             <block wx:for="{{list}}" wx:for-index="id" wx:for-item="itemName">
+                <navigator url="/pages/post_detail/index?post_id={{itemName.post_id}}">
                 <view class="box">
                     <view class="firstblock">
                         <image class="touxiang" src="{{itemName.face_url}}"></image>
@@ -28,6 +29,7 @@
                         <text class="number2">{{itemName.total_reciew}}</text>
                     </view>
                 </view>
+               </navigator>
             </block>
         </scroll-view>
     </block>
